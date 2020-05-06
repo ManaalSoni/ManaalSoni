@@ -1,2 +1,0 @@
-# ManaalSoni
-Digital Portfolio
