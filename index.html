@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(54, 10, 90);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manaal Soni Portfolio</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+	var mybutton = document.getElementById("myBtn");
+	window.onscroll = function() {scrollFunction()};
+	
+	// check if the scroll is >20px
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	// scroll to top if >20
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+	<header>
+		<h2><a href="https://www.youtube.com/watch?v=vte70xSXGL8">The obstacle is the way.</a></h2>
+		<nav>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</nav>
+	</header>
+
+
+	<section class="hero">
+		<div class="background-image" style="background-image: url(assets/img/background.jpeg);"></div>
+		<h1>Manaal Soni</h1>
+		<h3>Software Developer at Q</h3>
+	</section>
+
+
+	<section class="about", id="about">
+		<h3 class="title">About Me</h3>
+		<p>A versatile, reliable and efficient individual with a knack for leadership and team management. I am a B.Tech CSE Graduate from NIIT University, with work experience in domains such as Data Analysis, Software Development and Business Analytics.</p>
+		<hr>
+
+		<ul class="grid">
+			<li class="small" style="background-image: url(assets/img/sports.jpeg);"></li>
+			<li class="large" style="background-image: url(assets/img/drama.jpeg);"></li>
+			<li class="large" style="background-image: url(assets/img/community.jpeg);"></li>
+			<li class="small" style="background-image: url(assets/img/art.jpeg);"></li>
+		</div>
+	</section>
+	
+
+	<section class="skills", id="skills">
+		<h3 class="title">Skills</h3>
+		<hr>
+		<ul class="grid">
+			<li>
+				<i class="fa fa-stack-exchange"></i>
+				<h4>Data Structures and Algorithms</h4>
+			</li>
+			<li>
+				<i class="fa fa-cubes"></i>
+				<h4>ETL</h4>
+			</li>
+			<li>
+				<i class="fa fa-amazon"></i>
+				<h4>Amazon Web Services</h4>
+			</li>
+			<li>
+				<i class="fa fa-code"></i>
+				<h4>Python</h4>
+			</li>
+			<li>
+				<i class="fa fa-database"></i>
+				<h4>SQL</h4>
+			</li>
+			<li>
+				<i class="fa fa-area-chart"></i>
+				<h4>Data Visualisation</h4>
+			</li>
+			<li>
+				<i class="fa fa-newspaper-o"></i>
+				<h4>Excel</h4>
+			</li>
+		</div>
+	</section>
+
+
+	<section class="experience", id="experience">
+		<h3 class="title">Experience</h3>
+		<hr>
+			<p class="quote"> <strong> Data Analytics Intern </strong>| January'21 - June'21 <br> Tenovia Solution Pvt Ltd, Banglore, Karnataka.</p>
+			<p class="author">Project: AWS Data Lake
+				Streamlined multiple data inputs from APIs to data stores in AWS S3.</p>
+
+			<p class="quote"> <strong> Psychology Teacher </strong>| July'20 - Present <br> Sarvodaya English Medium School, Rajkot, Gujarat</p>
+			<p class="author">
+				Focused on an application based approach for students, where learning is based on interaction and exploration.</p>
+
+			<p class="quote"> <strong> Teaching Assistant </strong>| September'19 - December'19 <br> NIIT University, Neemrana, Rajasthan</p>
+			<p class="author">
+				Conducted remedial classes for B.Tech 1st Year students for the course Fundamentals of Computer Programming in Python</p>		
+	</section>
+
+
+	
+	<footer id="contact">
+		<p>Let's Connect:</p>
+		<p>manaal.soni@quantiphi.com</p>
+		<br>
+		<a href="https://www.linkedin.com/in/manaal" class="fa fa-linkedin"></a>
+	</footer>
+
+	
+</body>
+
+</html>
